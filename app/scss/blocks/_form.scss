@@ -1,0 +1,85 @@
+.form {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 770px; 
+    text-align: center;   
+    @include tablet-small{
+        margin-bottom: 70px;
+    }
+    @include mobile{
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        margin-bottom: 33px;
+    }
+    &__input {
+        background: $bg-input;            
+        border-radius: 16px;
+        outline: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-right: 19px;
+       
+         @include mobile{           
+            flex-direction: column;
+            border-radius: 0;            
+            background: transparent;
+            border: 0;
+            padding: 0 15px;
+        }                    
+    }    
+    &__input-email {
+        @include text($ff, 400, 2rem, 2.8rem, $text);            
+        background: transparent;
+        border-radius: 16px;
+        outline: 0; 
+        border: 0; 
+        padding: 25px 44px;
+        flex-grow: 1;   
+        
+        @include mobile{
+            border-radius: 8px;
+            padding: 10px;            
+            background: $bg-input;
+            width: 100%;            
+        }   
+        &::placeholder{
+            @include text($ff, 400, 2rem, 2.8rem, $text);     
+                      
+            @include tablet-small{
+                font-size: 1.6rem;
+                line-height: 2rem;                 
+            } 
+            @include mobile{
+                font-size: 1.4rem;
+            }    
+        }
+    }
+    &__btn {        
+        padding: 11px 26px;
+        @include mobile{            
+            width: 100%;            
+        }   
+    }
+}
+.body--night .form__input{
+    background-color: $bg-input-night;
+    @include mobile{       
+        background: transparent;        
+    }
+}
+.body--night .form__btn{
+    color: $bg-night;
+}
+.body--night .form__input-email::placeholder{
+    color: $white;
+}
+.body--night .form__input-email{
+    color: $white;
+    background-color: $bg-input-night;
+}

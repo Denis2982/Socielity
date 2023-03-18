@@ -1,0 +1,72 @@
+//Fonts:
+@font-face {
+    font-family: 'Segoe';
+    src: url('../fonts/SegoeUI.eot');
+    src: local('Segoe UI'), local('SegoeUI'),
+        url('../fonts/SegoeUI.eot') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff2') format('woff2'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe';
+    src: url('../fonts/SegoeUI-Bold.eot');
+    src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+        url('../fonts/SegoeUI-Bold.eot') format('embedded-opentype'),
+        url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+        url('../fonts/SegoeUI-Bold.woff') format('woff'),
+        url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+$ff: 'Segoe';
+//Color:
+$bg: #F6F7FD;
+$white:#ffffff;
+$black: #000;
+$text: #666666;
+$blue: #4579CB;
+$title: #474747;
+$gray: #CACACA;
+$bg-input: #E6E6E6;
+$bg_f: #306ECE;
+
+
+$bg-night: #232323;
+$bg-input-night: #262626;
+$bg_f-night: #272727;
+$bg-card-night: #121212;
+$bg-trust-night: #2f2f2f;
+
+$dark-gray: #969696;
+$body: #111827;
+
+$blue_2: #0077B5;
+$blue_3: #1877F2;
+$blue_4: #3FA4F1;
+$test: #2563EB;
+$text_rgba: rgba(255, 255, 255, 0.8);
+$border: rgba(255, 255, 255, 0.08);
+$shadow: rgba(0, 0, 0, 0.05);
+
+$lg-title: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%);
+$lg-1: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+$lg-2: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+$lg-card: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+$lg-input: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+
+
+//Transition:
+$transition: all .4s ease-in-out;
+
+
+//Breakpoints:
+$desctop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+
+$container: 1210px

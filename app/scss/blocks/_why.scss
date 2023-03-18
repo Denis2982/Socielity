@@ -1,0 +1,57 @@
+.why {
+    text-align: center;
+    margin-bottom: 100px;
+    @include tablet{
+        margin-bottom: 80px;
+    }
+    @include tablet-small{
+        margin-bottom: 60px;
+    }
+    @include mobile{
+        margin-bottom: 40px;
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 743px;       
+        margin-bottom: 51px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        @include tablet-small{
+            grid-template-columns: 1fr;
+        }
+    }
+    &__card {
+        height: 267px;
+        background-color: $bg;    
+        border-radius: 8px;       
+        padding: 20px 17px;
+        text-align: center;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: minmax(84px, auto) auto 1fr;        
+    }    
+    &__card-img {
+        align-self: center;
+        justify-self: center
+    }
+    &__card-title {
+        @include text($ff, 700, 2.0rem, 2.8rem, $title);
+        margin-bottom: 12px; 
+    }    
+}
+.body--night .why__card{
+    background-color: $bg-card-night;
+}
+.body--night .why__card-title{
+    color: $white;
+}

@@ -1,0 +1,15 @@
+@import 'normalize';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import 'vars';
+@import 'mixins';
+@import 'global';
+
+
+@import 'blocks/header';
+@import 'blocks/info';
+@import 'blocks/trust';
+@import 'blocks/complete';
+@import 'blocks/why';
+@import 'blocks/form';
+@import 'blocks/footer';
+

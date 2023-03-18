@@ -1,0 +1,78 @@
+.info {   
+    margin-bottom: 114px;
+    @include desctop-small{
+        margin-bottom: 100px;
+    } 
+    @include tablet{
+        margin-bottom: 80px;
+    } 
+    @include tablet-small{
+        margin-bottom: 60px;
+        gap: 20px;
+    }    
+    &__desc {
+        padding: 0 62px; 
+        text-align: center;
+        @include tablet-small{
+            padding: 0 20px;
+        }      
+    }
+    &__title {        
+        @include text($ff, 700, 5.6rem, 7.8rem, $title);        
+        letter-spacing: 0.02em;       
+        margin-bottom: 38px;
+        & span{
+            color: $blue;           
+        }
+        @include tablet{
+            font-size: 4.4rem;
+            line-height: 6rem;
+        } 
+        @include tablet-small{
+            font-size: 3.8rem;
+            line-height: 5rem;
+        }
+        @include mobile{
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            margin-bottom: 25px;
+        }       
+    }
+    &__subtitle {
+        margin: 0 auto;
+        margin-bottom: 38px;
+        max-width: 828px;
+        @include mobile{            
+            margin-bottom: 25px;
+        }      
+    }    
+    &__video {
+        padding-top: 21px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        @include text($ff, 400, 1.4rem, 2.4rem, $text);
+        cursor: pointer;                
+        & span{
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                background: $gray;
+                left: 0;
+                bottom: -3px;
+            }    
+        }
+        
+    }
+}
+.body--night .info__title{
+    color: $white;
+}
+.body--night .info__video span{
+    color: $white;
+}

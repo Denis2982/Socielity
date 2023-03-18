@@ -1,0 +1,71 @@
+html{
+    font-size: 10px;
+}
+
+body{margin: 0 auto;
+    overflow-x: hidden;
+    font-family: $ff;
+    background-color: $white;
+    max-width: 1440px;    
+}
+
+.body--night {
+    background-color: $bg-night;    
+}
+
+.container{
+    max-width: $container;
+    padding: 0 20px;
+    margin: 0 auto;         
+}
+
+.logo {
+    @include text($ff, 700, 3.6rem, 4.8rem, $blue);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-grow: 1;
+    justify-items: flex-start;
+    @include mobile{
+        font-size: 2.8rem;
+    }        
+}
+
+.title{
+    @include text($ff, 700, 2.6rem, 4.8rem, $title);    
+    @include mobile{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.subtitle{
+    @include text($ff, 400, 1.6rem, 2.4rem, $text);    
+    @include mobile{
+        margin-bottom: 20px;       
+    }
+}
+
+.body--night .subtitle{
+    color: $white;
+}
+
+.body--night .title{
+    color: $white;
+}
+
+.btn {
+    @include text($ff, 700, 1.6rem, 2.4rem, $white);
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    padding: 1.3rem 3.4rem;
+    background: $blue;
+    border-radius: 8px;    
+    cursor: pointer;
+    @include tablet-small{
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+    }     
+}

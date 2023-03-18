@@ -1,0 +1,44 @@
+.complete {
+    &__box{
+        margin-bottom: 120px;
+        padding: 0 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 45px;
+        @include desctop-small{
+            margin-bottom: 100px;
+        }
+        @include tablet{
+            margin-bottom: 80px;
+            flex-wrap:wrap-reverse;
+            justify-content: center;
+            text-align: center; 
+            &:nth-child(2n+1) .complete__img{
+                order: 2;                
+            }           
+        }
+        @include tablet-small{
+            margin-bottom: 60px;           
+        }
+        @include mobile{
+            margin-bottom: 30px;
+        }        
+        &:nth-child(2n) .complete__img{
+            order: 2;            
+        }       
+    }
+    &__desc {
+        max-width: 558px;
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        margin-bottom: 30px;
+        max-width: 527px;
+    }    
+}
+.body--night .complete__btn{
+    color: $bg-night;   
+}
